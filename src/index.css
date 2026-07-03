@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+
+  --color-brand-sand: #FDFBF7;
+  --color-brand-sand-dark: #F6F3EB;
+  --color-brand-forest: #1E3F20;
+  --color-brand-forest-light: #2D5830;
+  --color-brand-forest-muted: #4B6E4D;
+  --color-brand-wood: #A67C52;
+  --color-brand-wood-light: #B8926A;
+  --color-brand-wood-muted: #C29E75;
+  --color-brand-cream: #FFFDF9;
+  --color-brand-terracotta: #C4714A;
+  --color-brand-terracotta-light: #D48963;
+  --color-brand-gold: #D4AF37;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-brand-sand);
+    color: var(--color-brand-forest);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-sand-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-forest-muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-forest);
+}
+
+/* Micro-animations and utility animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.glassmorphism {
+  background: rgba(253, 251, 247, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 63, 32, 0.08);
+}
