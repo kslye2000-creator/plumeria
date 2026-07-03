@@ -1,16 +1,35 @@
-# React + Vite
+# Plumeria Home
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, highly-aesthetic React + Vite static website for **Plumeria Home**, a serene traditional teakwood guesthouse in Chiang Mai, Thailand.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic Interactive Pages**: Smooth SPA navigation between Home, Rooms, Vibes, Explore, and Contact views.
+- **Tailored Guest Views**: Special tabbed sections showcasing highlights for Digital Nomads, Backpackers, and Families.
+- **Reservation Request Form**: Simple and secure reservation inquiry layout with date validation.
+- **Interactive Points of Interest**: Local Chiang Mai highlights categorized for guests (markets, temples, nature).
+- **Modern Architecture**: Styled using Tailwind CSS v4 with custom brand tokens, clean layouts, and responsive design.
 
-## React Compiler
+## Deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This website is automatically built and deployed to GitHub Pages via **GitHub Actions** on every push to the `main` branch.
 
-## Expanding the Oxlint configuration
+Live URL: [https://kslye2000-creator.github.io/plumeria/](https://kslye2000-creator.github.io/plumeria/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Development
+
+To run the project locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Run Oxlint
+npm run lint
+
+# Build production version
+npm run build
+```
